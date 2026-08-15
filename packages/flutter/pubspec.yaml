@@ -1,0 +1,5 @@
+name: my_design_system
+version: 1.0.0
+description: Personal design system tokens and Flutter helpers.
+environment:
+  sdk: ">=3.4.0 <4.0.0"
