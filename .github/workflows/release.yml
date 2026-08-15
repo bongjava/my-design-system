@@ -1,0 +1,19 @@
+name: Release Design System
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate token source exists
+        run: test -f tokens/tokens.json
+      - name: Validate package versions
+        run: |
+          grep -q '"version": "1.0.0"' packages/react/package.json
+          grep -q 'version: 1.0.0' packages/flutter/pubspec.yaml
+          grep -q 'version = "1.0.0"' packages/compose/build.gradle.kts
