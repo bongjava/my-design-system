@@ -10,8 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - name: Validate token source exists
         run: test -f tokens/tokens.json
+      - name: Validate generated token outputs are current
+        run: node scripts/build-tokens.mjs --check
       - name: Validate package versions
         run: |
           grep -q '"version": "1.0.0"' packages/react/package.json
