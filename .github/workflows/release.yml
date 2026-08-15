@@ -19,6 +19,6 @@ jobs:
         run: node scripts/build-tokens.mjs --check
       - name: Validate package versions
         run: |
-          grep -q '"version": "1.0.0"' packages/react/package.json
-          grep -q 'version: 1.0.0' packages/flutter/pubspec.yaml
-          grep -q 'version = "1.0.0"' packages/compose/build.gradle.kts
+          grep -q '"version": "1.0.1"' packages/react/package.json
+          grep -q 'version: 1.0.1' packages/flutter/pubspec.yaml
+          grep -q 'version = "1.0.1"' packages/compose/build.gradle.kts
