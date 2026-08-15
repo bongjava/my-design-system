@@ -1,7 +1,11 @@
 {
-  "name": "@my-scope/design-system-react",
+  "name": "@bongjava/design-system-react",
   "version": "1.0.0",
   "type": "module",
+  "scripts": {
+    "build:tokens": "node ../../scripts/build-tokens.mjs",
+    "check:tokens": "node ../../scripts/build-tokens.mjs --check"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
