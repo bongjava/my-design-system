@@ -1,0 +1,14 @@
+:root {
+  --ds-color-brand-primary: #2563eb;
+  --ds-color-brand-secondary: #14b8a6;
+  --ds-color-brand-accent: #f97316;
+  --ds-color-surface-page: #f8fafc;
+  --ds-color-surface-panel: #ffffff;
+  --ds-color-surface-text: #111827;
+  --ds-space-xs: 4px;
+  --ds-space-sm: 8px;
+  --ds-space-md: 16px;
+  --ds-space-lg: 24px;
+  --ds-radius-sm: 4px;
+  --ds-radius-md: 8px;
+}
