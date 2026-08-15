@@ -2,7 +2,7 @@ plugins {
     kotlin("multiplatform") version "2.0.0"
 }
 
-group = "com.example"
+group = "com.bongjava"
 version = "1.0.0"
 
 kotlin {
