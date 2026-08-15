@@ -9,6 +9,20 @@ This repository is the independent source of truth for the personal design syste
 - Release stable versions with semver tags such as `v1.0.0`.
 - Publish package artifacts for React/Next.js, Flutter, Compose, and SwiftUI.
 
+## Token Build
+
+Design Tokens are the source of truth. After editing `tokens/tokens.json`, regenerate platform outputs:
+
+```bash
+node scripts/build-tokens.mjs
+```
+
+Before release, verify generated files are current:
+
+```bash
+node scripts/build-tokens.mjs --check
+```
+
 ## Layout
 
 ```text
